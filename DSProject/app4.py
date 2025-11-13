@@ -266,7 +266,7 @@ st.markdown("""
 def load_data():
     """Load original crop production dataset"""
     try:
-        df = pd.read_csv('crop_production.csv')
+        df = pd.read_csv('DSProject/crop_production.csv')
         df = df.dropna(subset=['Area', 'Production', 'State_Name', 'District_Name'])
         df['Crop_Year'] = pd.to_numeric(df['Crop_Year'], errors='coerce')
         df = df.dropna(subset=['Crop_Year'])
@@ -279,7 +279,7 @@ def load_data():
 def load_cleaned_data():
     """Load cleaned/preprocessed dataset"""
     try:
-        df = pd.read_csv('cleaned_crop_data.csv')
+        df = pd.read_csv('DSProject/cleaned_crop_data.csv')
         return df
     except:
         return load_data()
