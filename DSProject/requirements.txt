@@ -1,0 +1,31 @@
+streamlit>=1.29​
+
+pandas>=2.1​
+
+numpy>=1.24​
+
+scikit-learn>=1.3​
+
+
+
+
+
+matplotlib>=3.7​
+
+seaborn>=0.12​
+
+plotly>=5.18 # optional interactive charts in Streamlit​
+
+joblib>=1.3 # model saving/loading​
+
+python-dateutil>=2.8 # pandas dependency often used explicitly​
+
+pytz>=2023.3 # pandas timezones seen in env prints​
+
+tzdata>=2023.3 # timezone data for non-UTC systems​
+
+scipy>=1.10 # sklearn dependency and metrics​
+
+catboost>=1.2 # if used for classification benchmarking (optional)​
+
+shap>=0.44 # (optional)
